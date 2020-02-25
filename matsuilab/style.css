@@ -358,7 +358,7 @@ table.table{
 border-collapse:collapse;
 width:100%;
 margin:10px auto;
-font-size: medium;
+font-size: 14px;
 }
 
 table.table th,table.table td{
