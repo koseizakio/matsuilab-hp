@@ -569,3 +569,26 @@ border-radius:0 0 10px 10px;
 	
 	.grid{width:96%;}
 }
+
+@media only screen and (max-width:375px){
+	#header .logo{padding-top:10px;}
+  .info{padding:10px 0;}
+	ul#topnav li{width:50%;}
+
+	ul#topnav li:nth-child(3n){
+	border-right:1px solid #2871d7;
+	width:50%;
+	}	
+	ul#topnav li:nth-child(2n),ul#topnav li:nth-child(6n){border-right:0;}
+	
+	
+	#mainBanner h1, #mainBanner h2,#mainBanner h3{font-size:90%;}
+	
+	.grid{width:96%;}
+
+	table.table{
+		border-collapse:collapse;
+		margin:10px auto;
+		font-size: 12px;
+	}
+}
