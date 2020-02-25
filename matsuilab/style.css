@@ -306,13 +306,17 @@ border:1px solid #333;
 #research a {
     text-decoration: none;
     color: #fff;
-    padding-left: 2px;
+	padding-left: 2px;
+	
 }
 
 #Professor a{
+	font-size:20px;
 	color: black;
-	font-size:20px
+	text-decoration:none;
 }
+#Professor a:hover{color:#2871d7;}
+#Professor a:active, a:focus{outline:0;}
 
 .list-inline-item {
 	display: inline-block;
