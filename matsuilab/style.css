@@ -326,15 +326,21 @@ border:1px solid #333;
 	color:#fff;
 	background:#134091;
 	border-radius:4px;
+	
+	
 }
 
 #research-content .list-inline-item {
-    border-left: 5px solid #2871d7;
+	border-left: 5px solid #2871d7;
+	
+	
 }
 
 #research-content .list-inline {
     margin-top: -10px;
-    background-color: #fff;
+	background-color: #fff;
+	
+	
 }
 
 #research-content .list-under {
