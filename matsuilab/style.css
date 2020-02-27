@@ -301,13 +301,8 @@ border:1px solid #333;
 #gallery .gridWrapper{padding:0;}
 #gallery .grid{border:0;}
 
-/** **/
-
-#research a {
-    text-decoration: none;
-    color: #fff;
-	padding-left: 2px;
-	
+#research-content .list-inline-item {
+	border-left: 5px solid #2871d7;		
 }
 
 #Professor a{
@@ -317,6 +312,7 @@ border:1px solid #333;
 }
 #Professor a:hover{color:#2871d7;}
 #Professor a:active, a:focus{outline:0;}
+
 
 .list-inline-item {
 	display: inline-block;
@@ -329,17 +325,14 @@ border:1px solid #333;
 		
 }
 
-#research-content .list-inline-item {
-	border-left: 5px solid #2871d7;
-	
-	
-}
+.list-inline-item a{color:#fff;text-decoration:none;}
+.list-inline-item a:hover{color:#2871d7;}
+.list-inline-item a:active, .list-inline-item a:focus{outline:0;}
 
 #research-content .list-inline {
     margin-top: -10px;
 	background-color: #fff;
-	
-	
+		
 }
 
 /* */
