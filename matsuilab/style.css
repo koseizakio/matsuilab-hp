@@ -259,6 +259,10 @@ font-size:14px;
 overflow:hidden;
 }
 
+section.content h1{
+	font-size: 20px;
+}
+
 section.content h2{
 	font-size: 15px;
 }
@@ -560,6 +564,13 @@ border-radius:0 0 10px 10px;
 		background:#134091;
 		border-radius:4px;
 	}
+
+
+	iframe{
+		width: 320px;
+		height: 160px;
+	}
+	
 }
 
 @media only screen and (max-width:375px){
@@ -582,5 +593,11 @@ border-radius:0 0 10px 10px;
 		border-collapse:collapse;
 		margin:10px auto;
 		font-size: 12px;
+	}
+
+	
+	iframe{
+		width: 320px;
+		height: 160px;
 	}
 }
