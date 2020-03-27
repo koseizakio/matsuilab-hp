@@ -271,6 +271,19 @@ section.content center{
 	font-size: 40px;
 }
 
+.youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
 * html section.content{height:1%;}
 
 section.content p{margin-bottom:5px;}
@@ -564,12 +577,7 @@ border-radius:0 0 10px 10px;
 		background:#134091;
 		border-radius:4px;
 	}
-
-
-	iframe{
-		width: 320px;
-		height: 160px;
-	}
+	
 	
 }
 
@@ -596,8 +604,4 @@ border-radius:0 0 10px 10px;
 	}
 
 	
-	iframe{
-		width: 320px;
-		height: 160px;
-	}
 }
