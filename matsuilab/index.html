@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ja">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151210319-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151210319-2"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'UA-151210319-2');
-</script>
+	gtag('config', 'UA-151210319-2');
+	</script>
 
-<meta charset="UTF-8">
-<title>金沢工業大学 松井くにお研究室</title>
-<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="description" content="「ちょっと焦げ目のついたブリを焼きたい。」今まで、名人の勘と経験に頼って 機械（道具）を使ってきたことが、誰にでもできるような世の中になってきている。
-言葉で機械を動かしたり（自然言語理解）、センサー等で集めた数値データを分析し、 スポーツ実況を自動的に行なったり（自然言語生成）することの高度化が求められている。
-金沢工業大学 松井研究室では、言葉と数値の変換を人工知能を用いた人と機械の対話技術として 研究開発を進めている。">
-<meta name="keywords" content="金沢工業大学 松井研究室">
+	<meta charset="UTF-8">
+	<title>金沢工業大学 松井くにお研究室</title>
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="「ちょっと焦げ目のついたブリを焼きたい。」今まで、名人の勘と経験に頼って 機械（道具）を使ってきたことが、誰にでもできるような世の中になってきている。
+	言葉で機械を動かしたり（自然言語理解）、センサー等で集めた数値データを分析し、 スポーツ実況を自動的に行なったり（自然言語生成）することの高度化が求められている。
+	金沢工業大学 松井研究室では、言葉と数値の変換を人工知能を用いた人と機械の対話技術として 研究開発を進めている。">
+	<meta name="keywords" content="金沢工業大学 松井研究室">
 
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<![endif]-->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$('.slider').bxSlider({
+					auto: true,
+					pause: 5000,
+				});
+			});
+	</script>
 </head>
 <body>
 <!-- ヘッダー -->
@@ -59,13 +67,15 @@
 
 <div id="wrapper">
 	<div id="mainBanner" class="mainImg">
-		<div class="inner">
-			<img src="images/mainImg.jpg" width="940" height="300" alt="">
-			<div class="slogan">
-				<h1>自然言語処理とデータ分析</h1>
-				<h2>人工知能技術を用いて<br>人と機械の双方向の対話を実現</h2>
-			</div>
+
+		<div class="slider">
+			
+			<img src="images/mainImg.png" width="760" height="370" alt="">
+			<img src="images/Img01.png" width="760" height="370" alt="">
+			<img src="images/Img02.jpg" width="760" height="370" alt="">
+
 		</div>
+	
 	</div>
     
 	<section class="content">
