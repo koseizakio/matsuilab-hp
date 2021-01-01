@@ -17,7 +17,7 @@
 <meta name="description" content="コード化点字ブロックによる音声情報案内">
 <meta name="description" content="CM好感度調査の分析">
 <meta name="keywords" content="金沢工業大学 松井研究室">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
@@ -27,60 +27,148 @@
 <body id="subpage">
 <!-- ヘッダー -->
 <div id="header">
-	<div class="inner">
-  
-
-		<!-- ロゴ -->
+	<div class="inner">		
 		<div class="logo">
-			<a href="index.html">金沢工業大学　松井研究室<br><span>MATSUI KUNIO LABORATORY</span></a>
+			<a>金沢工業大学　松井研究室<br><span>MATSUI KUNIO LABORATORY</span></a>
 		</div>
-		<!-- / ロゴ -->
-
-  <!-- トップナビゲーション -->
-	<ul id="topnav">
-		<li><a href="index.html">ホーム<br><span>Home</span></a></li>
-		<li class="active"><a href="research.html">研究紹介<br><span>Research</span></a></li>
-		<li><a href="member.html">メンバー<br><span>Member</span></a></li>
-		<li><a href="publication.html">研究業績<br><span>Publication</span></a></li>
-		<li><a href="access.html">アクセス<br><span>Access</span></a></li>
-		<li><a href="contact.html">お問い合わせ<br><span>Contact</span></a></li>
-	</ul>
-	<!-- トップナビゲーション -->
-  
-  </div>
-  
+	</div>
 </div>
-<!-- / ヘッダー -->
 
-<!-- / メイン画像 -->
-
-
+<div class="inner">
+	
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="nav1">
+			<ul class="navbar-nav">
+				<!-- ホーム -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="index.html"  data-toggle="dropdown">ホーム<br>Home</span></a>
+					<div class="dropdown-menu">
+						<a href="index.html#Research" class="dropdown-item">研究概要</a>
+						<a href="index.html#Braille_blocks" class="dropdown-item">コード化点字ブロック</a>
+						<a href="index.html#Chatbot" class="dropdown-item">チャットボット開発</a>
+						<a href="index.html#YoutubeLive" class="dropdown-item">Youtube配信</a>
+						<a href="index.html#Recent" class="dropdown-item">近況</a>
+						<a href="index.html#Profile" class="dropdown-item">松井教授のプロフィール</a>
+					</div>
+				</li>
+				<!-- 研究紹介 -->
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="research.html"  data-toggle="dropdown">研究紹介<br>Research</span></a>
+					<div class="dropdown-menu">
+						<a href="research.html#Chatbot" class="dropdown-item">学生の研究や活動情報取得を支援するチャットボット開発</a>
+						<a href="research.html#Braille_blocks" class="dropdown-item">コード化点字ブロックによる音声情報案内</a>
+						<a href="research.html#CM_analysis" class="dropdown-item">CM好感度調査の分析</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="member.html"  data-toggle="dropdown">メンバー<br>Member</span></a>
+					<div class="dropdown-menu">
+						<a href="member.html#Professor" class="dropdown-item">教員</a>
+						<a href="member.html#2020" class="dropdown-item">2020年</a>
+						<a href="member.html#2019" class="dropdown-item">2019年</a>
+						<a href="member.html#2018" class="dropdown-item">2018年</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="publication.html"  data-toggle="dropdown">研究業績<br>Publication</span></a>
+					<div class="dropdown-menu">
+						<a href="publication.html#Symposium" class="dropdown-item">国内研究会・シンポジウム</a>
+						<a href="publication.html#Product" class="dropdown-item">作品・制作物</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="access.html" class="nav-link">アクセス<br>Access</span></a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">お問い合わせ<br>Contact</span></a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
 
 <div id="wrapper">
-    
-<!-- コンテンツ -->
-		<section class="content">
-			<center>研究紹介</center>
-		</section>
+	
+	<!-- コンテンツ -->
+	<section class="content">
+		<center>研究紹介</center>
+	</section>
+	
+	<div id="research">
+		<div id="research-content">
+			<div id="Chatbot">
+				<section class="content">
+					<h3 class="heading">学生の研究や活動情報取得を支援するチャットボット開発</h3>
+					<article>
+						<iframe height="500" width="360" marginheight="0" src="http://ec2-54-166-236-40.compute-1.amazonaws.com:3000/" frameborder="0"  marginwidth="0" class="alignleft frame"></iframe>
+						<p>松井研究室では、金沢工業大学の研究室や課外活動の情報取得を支援するチャットボットを開発しました。プロジェクトデザインⅢ（卒業研究）の研究テーマの一環としてで取組んだもので、シンプルかつ直感的に操作ができる検索システムとなっています。</p>
+						<p class="font-weight-bold">1.課題と目的</p>
+						<p>学生生活において、学内の情報（課外活動や研究室）について調べることがあったが、これらの検索システムはどちらかと言うと教員や学外の人に向けられて制作されていると感じるところがある。また、知りたい情報までいくつかの段階を踏む必要があるため、煩わしさを感じることもある。</p>
+						<p>そのため、本研究では学生に焦点をあてシンプルかつ直感的に操作ができる検索システムを開発することを目的とする。</p>
+						<p class="font-weight-bold">2.解決方法</p>
+						<p>シンプルかつ直感的に操作ができる検索システムを実現するため、本研究ではチャットボット（ルール型）をWebアプリケーションで開発をする。</p>
+					</article>
+				</section>
+				<section class="content">
+					<article>
+						<p class="font-weight-bold">3.使用言語</p>
+						<table class="table">
+							<tr>
+								<th>サーバーサイド言語</th>
+								<th>フロントサイド言語</th>				
+							</tr>
+							<tr>
+								<td>Node.js</td>
+								<td>HTML、CSS、JavaScript</td>
+							</tr>
+						</table>
 
-		
-		<div id="research">
-			<div id="research-content">
-			
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#Braille_blocks">コード化点字ブロックによる音声情報案内</a></li>
-					<li class="list-inline-item"><a href="#CM_analysis">CM好感度調査の分析</a></li>
-				</ul>
+					<article>
+						<p class="font-weight-bold">4.メニュー項目の説明</p>
+						<table class="table">
+							<tr>
+								<th>項目</th>
+								<th>説明</th>				
+							</tr>
+							<tr>
+								<td>研究室検索</td>
+								<td>研究室検索に進む</td>
+							</tr>
+							<tr>
+								<td>課外活動検索</td>
+								<td>課外活動検索に進む</td>
+							</tr>
+							<tr>
+								<td>研究室一覧</td>
+								<td>以下のURLに遷移</br>
+								<a href="https://kitnet.jp/laboratories/index.html#subject01">https://kitnet.jp/laboratories/index.html#subject01</a></td>
+							</tr>
+							<tr>
+								<td>課外活動一覧</td>
+								<td>以下のURLに遷移</br>
+								<a href="https://www.kanazawait.ac.jp/kitnews/2020/extracurricular-activities.html">https://www.kanazawait.ac.jp/kitnews/2020/extracurricular-activities.html</a></td>
+							</tr>
+							<tr>
+								<td>お問い合わせ</td>
+								<td>アプリケーション製作者にお問い合わせすることができる</td>
+							</tr>
+							<tr>
+								<td>アンケート</td>
+								<td>Googleフォームのアンケートページへ遷移</td>
+							</tr>
+						</table>
+					</article>
+				</section>
+			</div>
 
-				<div id="Braille_blocks">
-					<section class="content">
-						<h3 class="heading">コード化点字ブロックによる音声情報案内</h3>
-							<img src="images/kenkyushokai_1641.jpg" width="480" height="320" alt="" class="alignleft frame">
-							<p>松井研究室では、このたび「コード化点字ブロックを活用したAI音声誘導サービス」の社会実装に向けた取り組みを開始しました。視覚障がい者の歩行課題の軽減に加え、観光客や外国人も観光情報や災害時の避難情報などが取得できるインフラ整備を目指します。2019年度の「金沢市市民生活AI技術等促進事業」（事業期間1年）の選定を受けて実施するもので、あらかじめコード化した点字ブロックの販売や、他の自治体も利用できるようオープンデータ化も進め、コード化点字ブロックの普及を目指します。</p>
-							<p>金沢市の協力のもと、広坂、兼六園、金沢21世紀美術館周辺など観光施設の多い地域から観光案内コード化点字ブロックの実装地点を選定し、本年12月に敷設しました。視覚障がい者や観光客、外国人など、周辺情報を必要としている人たちが白杖やウエストポーチ等につけたカメラや、スマートフォンで点字ブロックを読み取ると、AIが観光施設やレストラン、トイレ等を音声誘導するほか、災害時には避難所への誘導情報への切り替えも可能です。</p>				
-					</section>
-			
-			
+
+			<div id="Braille_blocks">
+				<section class="content">
+					<h3 class="heading">コード化点字ブロックによる音声情報案内</h3>
+					<img src="images/kenkyushokai_1641.jpg" width="480" height="320" alt="" class="alignleft frame">
+					<p>松井研究室では、このたび「コード化点字ブロックを活用したAI音声誘導サービス」の社会実装に向けた取り組みを開始しました。視覚障がい者の歩行課題の軽減に加え、観光客や外国人も観光情報や災害時の避難情報などが取得できるインフラ整備を目指します。2019年度の「金沢市市民生活AI技術等促進事業」（事業期間1年）の選定を受けて実施するもので、あらかじめコード化した点字ブロックの販売や、他の自治体も利用できるようオープンデータ化も進め、コード化点字ブロックの普及を目指します。</p>
+				</section>
+					
 					<section class="content">
 						<h1>コード化点字ブロックオープンデータ</h1>
 						<table class="table">
@@ -157,6 +245,18 @@
 	</div>
 </div>
 <!-- / フッター -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script>
 
+	$('.dropdown-toggle').click(function() {
+		$('.dropdown-toggle').dblclick(function() {
+		var location = $(this).attr('href');
+		window.location.href = location;
+		return false;
+	});
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

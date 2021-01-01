@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 <meta name="description" content="松井くにお">
 <meta name="keywords" content="金沢工業大学 松井研究室">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
@@ -26,28 +26,67 @@
 <body id="subpage">
 <!-- ヘッダー -->
 <div id="header">
-	<div class="inner">
-  
-
-		<!-- ロゴ -->
+	<div class="inner">		
 		<div class="logo">
-			<a href="index.html">金沢工業大学　松井研究室<br><span>MATSUI KUNIO LABORATORY</span></a>
+			<a>金沢工業大学　松井研究室<br><span>MATSUI KUNIO LABORATORY</span></a>
 		</div>
-		<!-- / ロゴ -->
+	</div>
+</div>
 
-  <!-- トップナビゲーション -->
-	<ul id="topnav">
-		<li><a href="index.html">ホーム<br><span>Home</span></a></li>
-		<li><a href="research.html">研究紹介<br><span>Research</span></a></li>
-		<li><a href="member.html">メンバー<br><span>Member</span></a></li>
-		<li class="active"><a href="publication.html">研究業績<br><span>Publication</span></a></li>
-		<li><a href="access.html">アクセス<br><span>Access</span></a></li>
-		<li><a href="contact.html">お問い合わせ<br><span>Contact</span></a></li>
-	</ul>
-	<!-- トップナビゲーション -->
-  
-  </div>
-  
+<div class="inner">
+	
+		
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="nav1">
+			<ul class="navbar-nav">
+				<!-- ホーム -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="index.html"  data-toggle="dropdown">ホーム<br>Home</span></a>
+					<div class="dropdown-menu">
+					<a href="index.html#Research" class="dropdown-item">研究概要</a>
+					<a href="index.html#Braille_blocks" class="dropdown-item">コード化点字ブロック</a>
+					<a href="index.html#Chatbot" class="dropdown-item">チャットボット開発</a>
+					<a href="index.html#YoutubeLive" class="dropdown-item">Youtube配信</a>
+					<a href="index.html#Recent" class="dropdown-item">近況</a>
+					<a href="index.html#Profile" class="dropdown-item">松井教授のプロフィール</a>
+					</div>
+				</li>
+				<!-- 研究紹介 -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="research.html"  data-toggle="dropdown">研究紹介<br>Research</span></a>
+					<div class="dropdown-menu">
+					<a href="research.html#Chatbot" class="dropdown-item">学生の研究や活動情報取得を支援するチャットボット開発</a>
+					<a href="research.html#Braille_blocks" class="dropdown-item">コード化点字ブロックによる音声情報案内</a>
+					<a href="research.html#CM_analysis" class="dropdown-item">CM好感度調査の分析</a>
+					</div>
+				</li>
+				<!-- メンバー -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="member.html"  data-toggle="dropdown">メンバー<br>Member</span></a>
+					<div class="dropdown-menu">
+					<a href="member.html#Professor" class="dropdown-item">教員</a>
+					<a href="member.html#2020" class="dropdown-item">2020年</a>
+					<a href="member.html#2019" class="dropdown-item">2019年</a>
+					<a href="member.html#2018" class="dropdown-item">2018年</a>
+					</div>
+				</li>
+				<!-- 研究業績 -->
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="publication.html"  data-toggle="dropdown">研究業績<br>Publication</span></a>
+					<div class="dropdown-menu">
+					<a href="publication.html#Symposium" class="dropdown-item">国内研究会・シンポジウム</a>
+					<a href="publication.html#Product" class="dropdown-item">作品・制作物</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="access.html" class="nav-link">アクセス<br>Access</span></a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">お問い合わせ<br>Contact</span></a></li>
+			</ul>
+		</div>
+	</nav>
 </div>
 <!-- / ヘッダー -->
 
@@ -64,11 +103,6 @@
 		<div id="research">
 			<div id="research-content">
 			
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#Symposium">国内研究会・シンポジウム</a></li>
-					<li class="list-inline-item"><a href="#Product">作品・制作物</a></li>
-				</ul>
-
 				<!--2020-->
 				<div id="Symposium">
 					<h3 class="heading">国内研究会・シンポジウム</h3>
@@ -80,6 +114,7 @@
 				<div id="Product">
 					<h3 class="heading">作品・制作物</h3>
 					<table class="table">
+						<tr><td><ui><a href="http://ec2-54-166-236-40.compute-1.amazonaws.com:3000/" target="_blank" rel="noopener">伊地知 晃生, 松井くにお, 金沢工業大学の研究室や課外活動の情報取得を支援するチャットボット, 2020-2021</a></ui></td></tr>
 						<tr><td><ui><a href="http://cotech-lab.github.io/hospital/" target="_blank" rel="noopener">豊川ヘンリー善崇, 松井くにお, Hospital Interface(Web アプリケーション), 2015-2019</a></ui></td></tr>
 						<tr><td><ui><a href="https://line.me/R/ti/p/B7aqQJCukb" target="_blank" rel="noopener">豊川ヘンリー善崇, 松井くにお, Lekarski(チャットボット), 2019</a></ui></td></tr>
 					</table>
@@ -126,6 +161,20 @@
 	</div>
 </div>
 <!-- / フッター -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script>
+
+	$('.dropdown-toggle').click(function() {
+		$('.dropdown-toggle').dblclick(function() {
+		var location = $(this).attr('href');
+		window.location.href = location;
+		return false;
+	});
+	});
+	
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

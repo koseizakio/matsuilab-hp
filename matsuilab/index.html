@@ -18,66 +18,122 @@
 	言葉で機械を動かしたり（自然言語理解）、センサー等で集めた数値データを分析し、 スポーツ実況を自動的に行なったり（自然言語生成）することの高度化が求められている。
 	金沢工業大学 松井研究室では、言葉と数値の変換を人工知能を用いた人と機械の対話技術として 研究開発を進めている。">
 	<meta name="keywords" content="金沢工業大学 松井研究室">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
 
-	<script type="text/javascript">
-			$(document).ready(function(){
-				$('.slider').bxSlider({
-					auto: true,
-					pause: 5000,
-				});
-			});
+	<!--追加-->
+	<script>
+		function openwin()
+		{
+			var window1 = window.open("http://ec2-54-166-236-40.compute-1.amazonaws.com:3000/", "", "locaton=no,width=500,height=580");
+			window1.moveTo(0, 0);
+		}
 	</script>
+
 </head>
 <body>
+	<a id="tag" href="javascript:openwin();">
+		<img src="images/お松ちゃん.gif" width="160" height="160"/>
+	</a>
 <!-- ヘッダー -->
 <div id="header">
-	<div class="inner">
-  
-
-		<!-- ロゴ -->
+	<div class="inner">		
 		<div class="logo">
-			<a href="index.html">金沢工業大学　松井研究室<br><span>MATSUI KUNIO LABORATORY</span></a>
+			<a>金沢工業大学　松井研究室<br><span>MATSUI KUNIO LABORATORY</span></a>
 		</div>
-		<!-- / ロゴ -->
-
-  <!-- トップナビゲーション -->
-	<ul id="topnav">
-		<li class="active"><a href="index.html">ホーム<br><span>Home</span></a></li>
-		<li><a href="research.html">研究紹介<br><span>Research</span></a></li>
-		<li><a href="member.html">メンバー<br><span>Member</span></a></li>
-		<li><a href="publication.html">研究業績<br><span>Publication</span></a></li>
-		<li><a href="access.html">アクセス<br><span>Access</span></a></li>
-		<li><a href="contact.html">お問い合わせ<br><span>Contact</span></a></li>
-	</ul>
-	<!-- トップナビゲーション -->
-  
-  </div>
-  
+	</div>
 </div>
-<!-- / ヘッダー -->
 
+	<div class="inner">
+		
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="nav1">
+				<ul class="navbar-nav">
+					<!-- ホーム -->
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="index.html"  data-toggle="dropdown">ホーム<br>Home</span></a>
+						<div class="dropdown-menu">
+						<a href="index.html#Research" class="dropdown-item">研究概要</a>
+						<a href="index.html#Braille_blocks" class="dropdown-item">コード化点字ブロック</a>
+						<a href="index.html#Chatbot" class="dropdown-item">チャットボット開発</a>
+						<a href="index.html#YoutubeLive" class="dropdown-item">Youtube配信</a>
+						<a href="index.html#Recent" class="dropdown-item">近況</a>
+						<a href="index.html#Profile" class="dropdown-item">松井教授のプロフィール</a>
+						</div>
+					</li>
+					<!-- 研究紹介 -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="research.html"  data-toggle="dropdown">研究紹介<br>Research</span></a>
+						<div class="dropdown-menu">
+						<a href="research.html#Chatbot" class="dropdown-item">学生の研究や活動情報取得を支援するチャットボット開発</a>
+						<a href="research.html#Braille_blocks" class="dropdown-item">コード化点字ブロックによる音声情報案内</a>
+						<a href="research.html#CM_analysis" class="dropdown-item">CM好感度調査の分析</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="member.html"  data-toggle="dropdown">メンバー<br>Member</span></a>
+						<div class="dropdown-menu">
+						<a href="member.html#Professor" class="dropdown-item">教員</a>
+						<a href="member.html#2020" class="dropdown-item">2020年</a>
+						<a href="member.html#2019" class="dropdown-item">2019年</a>
+						<a href="member.html#2018" class="dropdown-item">2018年</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="publication.html"  data-toggle="dropdown">研究業績<br>Publication</span></a>
+						<div class="dropdown-menu">
+						<a href="publication.html#Symposium" class="dropdown-item">国内研究会・シンポジウム</a>
+						<a href="publication.html#Product" class="dropdown-item">作品・制作物</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="access.html" class="nav-link">アクセス<br>Access</span></a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">お問い合わせ<br>Contact</span></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+<!-- / ヘッダー -->
 <!-- メイン画像 -->
 
 <!-- / メイン画像 -->
 
 <div id="wrapper">
-	<div id="mainBanner" class="mainImg">
 
-		<div class="slider">
-			
-			<img src="images/mainImg.png" width="760" height="370" alt="">
-			<img src="images/Img01.png" width="760" height="370" alt="">
-			<img src="images/Img02.jpg" width="760" height="370" alt="">
-
-		</div>
 	
-	</div>
-    
+	<section class="content">
+	<!-- 修正 -->
+		<div class="container">     
+		
+			<div class="carousel slide" id="c1" data-ride="carousel">
+
+			<div class="carousel-inner">
+				<div class="carousel-item active"><img src="images/mainImg.png" class="d-block w-100"></div>
+				<div class="carousel-item"><img src="images/Img01.png" class="d-block w-100"></div>
+				<div class="carousel-item"><img src="images/Img02.jpg" class="d-block w-100"></div>
+			</div>
+
+			<a href="#c1" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="sr-only">前の画像へ</span>
+			</a>
+			<a href="#c1" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="sr-only">次の画像へ</span>
+			</a>
+			</div>
+		
+		</div>
+	</section>
+	<!-- 修正  -->
+    <div id="Research">
 	<section class="content">
 		<h3 class="heading">研究概要</h3>
 			<article>
@@ -89,7 +145,24 @@
 					研究開発を進めている。</p>
 			</article>
 	</section>
+	</div>
 
+	<div id="Braille_blocks">
+	<section class="content">
+		<h3 class="heading">コード化点字ブロック</h3>
+		<a href="opendata/ダウンロードと例.pdf" class="btn btn-primary">アプリの使い方</a>
+  		<a href="opendata/privacypolicy.pdf" class="btn btn-danger">プライバシーポリシー</a>
+	</section>
+	</div>
+
+	<div id="Chatbot">
+	<section class="content">
+		<h3 class="heading">学生の研究や活動情報取得を支援するチャットボット開発</h3>
+		<a href="javascript:openwin();" class="btn btn-primary">チャットボットを開く</a>
+	</section>
+	</div>
+
+	<div id="YoutubeLive">
 	<section class="content">
 		<h3 class="heading">Youtube 配信</h3>
 			
@@ -98,19 +171,23 @@
 			<div class="youtube">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/oNNIEPRytQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
 			</div>
-
 	</section>
-
+	</div>
 	
+	<div id="Recent">
 	<section class="content">
-	
 		<h3 class="heading">近況</h3>
 		<div style="height:300px; width:100%; overflow-y:scroll;">
 			<table class="table">
 
 				<tr>
+					<th>2020.12.4</th>
+					<td><ui><a a href="https://www.kanazawa-it.ac.jp/kitnews/2020/1204_MatsuiLab.html" target="_blank" rel="noopener">金沢工業大学の研究室や課外活動の情報取得を支援するチャットボットを情報工学科の学生が開発</a></ui></td>
+				</tr>
+
+				<tr>
 					<th>2020.07.27</th>
-					<td><ui><a href="https://www.shimintimes.co.jp/news/2020/07/post-10452.php?fbclid=IwAR33QlWFtQcb2EW2tUUzIJKIYw9MSjHky3C7S86anse51VSGHPWw9LdDaeQ" target_="_blank" rel="noopener">点字ブロックで音声案内 長野県松本市でシステム実験ん</a></ui></td>
+					<td><ui><a href="https://www.shimintimes.co.jp/news/2020/07/post-10452.php?fbclid=IwAR33QlWFtQcb2EW2tUUzIJKIYw9MSjHky3C7S86anse51VSGHPWw9LdDaeQ" target_="_blank" rel="noopener">点字ブロックで音声案内 長野県松本市でシステム実験</a></ui></td>
 				</tr>
 
 				<tr>
@@ -171,8 +248,9 @@
 			</table>
 		</div>
 	</section>
+	</div>
 
-
+	<div id="Profile">
 	<section class="content">
 		<h3 class="heading">プロフィール</h3>
 
@@ -232,19 +310,19 @@
 		</table>
 		
 	</section>
+	</div>
 
+	<h3 class="heading">学生向け</h3>
+	<table class="table">
+		<tr><td><ui><a href="contact.html">金沢工業大学 工学部 情報工学科 3年生 研究室訪問</a></ui></td></tr>
+		<tr><td><ui><a href="http://www.ic.kanazawa-it.ac.jp/#!index.md" target="_blank" rel="noopener">金沢工業大学 工学部 情報工学科 ホームページ</a><span class="red-word"> ※学内ネット</span></ui></td></tr>
+	</table>
+	
 
-		<h3 class="heading">学生向け</h3>
-		<table class="table">
-			<tr><td><ui><a href="contact.html">金沢工業大学 工学部 情報工学科 3年生 研究室訪問</a></ui></td></tr>
-			<tr><td><ui><a href="http://www.ic.kanazawa-it.ac.jp/#!index.md" target="_blank" rel="noopener">金沢工業大学 工学部 情報工学科 ホームページ</a><span class="red-word"> ※学内ネット</span></ui></td></tr>
-		</table>
-		
-
-		<h3 class="heading">社会人向け</h3>
-		<table class="table">
-			<tr><td><ui><a href="https://www.kanazawa-it.ac.jp/kit-ite/index.html" target="_blank" rel="noopener">金沢工業大学 情報技術教育プログラム</a></ui></td></tr>
-		</table>
+	<h3 class="heading">社会人向け</h3>
+	<table class="table">
+		<tr><td><ui><a href="https://www.kanazawa-it.ac.jp/kit-ite/index.html" target="_blank" rel="noopener">金沢工業大学 情報技術教育プログラム</a></ui></td></tr>
+	</table>
 
 </div>
 <!-- / WRAPPER -->
@@ -280,6 +358,19 @@
 	</div>
 </div>
 <!-- / フッター -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script>
 
+	$('.dropdown-toggle').click(function() {
+		$('.dropdown-toggle').dblclick(function() {
+		var location = $(this).attr('href');
+		window.location.href = location;
+		return false;
+	});
+	});
+	
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

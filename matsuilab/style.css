@@ -31,13 +31,25 @@ html{
 
 /* リンク設定
 ------------------------------------------------------------*/
-a{color:#134b88;text-decoration:none;}
+a{color:#134b88;text-decoration:none;} 
 a:hover{color:#2871d7;}
 a:active, a:focus{outline:0;}
 
 
 /* 全体
 ------------------------------------------------------------*/
+#tag{
+	position: fixed;
+	bottom: 0px;
+	left: 5px;
+	margin: 5px;
+	z-index: 999;
+}
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
+
 #wrapper{
 margin:0 auto;
 padding:20px 1%;
@@ -66,7 +78,7 @@ font-weight:normal;
 
 #header{
 overflow:hidden;
-padding:5px 0 0;
+padding:0px 0 0;
 color:#fff;
 background:#134b88;
 }
@@ -108,7 +120,7 @@ font-weight:bold;
 /**************************
 /* トップナビゲーション
 **************************/
-ul#topnav{
+nav#topnav{
 clear:both;
 overflow:hidden;
 margin:0 auto;
@@ -116,14 +128,14 @@ background:#134091;
 border-radius:5px 5px 0 0;
 }
 
-* html ul#topnav{height:1%;}
+* html nav#topnav{height:1%;}
 
-ul#topnav li{
+nav#topnav li{
 float:left;
 text-align:center;
 }
 
-ul#topnav a{
+nav#topnav a{
 width:156px;
 font-size:12px;
 display:block;
@@ -133,13 +145,13 @@ line-height:1.2;
 border-left:1px solid #2871d7;
 }
 
-ul#topnav a span{font-size:9px;}
+nav#topnav a span{font-size:9px;}
 
-ul#topnav li:first-child a{border:0;}
+nav#topnav li:first-child a{border:0;}
 
-ul#topnav li:last-child a{width:155px;}
+nav#topnav li:last-child a{width:155px;}
 
-ul#topnav li.active a,ul#topnav a:hover{background:#2871d7;}
+nav#topnav li.active a,nav#topnav a:hover{background:#2871d7;}
 
 
 /**************************
@@ -408,10 +420,9 @@ border-radius:0 0 10px 10px;
 
 #footer .copyright{font-size:11px;}
 
-
 /* PC用 */
 @media only screen and (min-width:960px){
-	#wrapper,.inner,ul#topnav{
+	#wrapper,.inner,nav#topnav{
 	width:940px;
 	padding:0;
 	}
@@ -456,13 +467,13 @@ border-radius:0 0 10px 10px;
 	#header .logo{padding-left:10px;}
 	#header .info{padding-right:10px;}
 	
-	ul#topnav{
+	nav#topnav{
 	clear:both;
 	width:100%;
 	border-radius:0;
 	}
 
-	ul#topnav li{
+	nav#topnav li{
 	width:33%;
 	border-right:1px solid #2871d7;
 	border-bottom:1px solid #2871d7;
@@ -471,14 +482,14 @@ border-radius:0 0 10px 10px;
   -moz-box-sizing:border-box;
 	}
 
-	ul#topnav li:nth-child(3n){border-right:0;width:34%;}
+	nav#topnav li:nth-child(3n){border-right:0;width:34%;}
 
-	ul#topnav li a{
+	nav#topnav li a{
 	width:100%;
 	border:0;
 	}
 
-	ul#topnav li:first-child a,ul#topnav li:last-child a{width:100%;}
+	nav#topnav li:first-child a,nav#topnav li:last-child a{width:100%;}
 	
 	.grid{
 	width:45%;
@@ -556,13 +567,13 @@ border-radius:0 0 10px 10px;
 @media only screen and (max-width:480px){
 	#header .logo{padding-top:10px;}
   .info{padding:10px 0;}
-	ul#topnav li{width:50%;}
+	nav#topnav li{width:50%;}
 
-	ul#topnav li:nth-child(3n){
+	nav#topnav li:nth-child(3n){
 	border-right:1px solid #2871d7;
 	width:50%;
 	}	
-	ul#topnav li:nth-child(2n),ul#topnav li:nth-child(6n){border-right:0;}
+	nav#topnav li:nth-child(2n),nav#topnav li:nth-child(6n){border-right:0;}
 	
 	
 	#mainBanner h1, #mainBanner h2,#mainBanner h3{font-size:90%;}
@@ -584,13 +595,13 @@ border-radius:0 0 10px 10px;
 @media only screen and (max-width:375px){
 	#header .logo{padding-top:10px;}
   .info{padding:10px 0;}
-	ul#topnav li{width:50%;}
+	nav#topnav li{width:50%;}
 
-	ul#topnav li:nth-child(3n){
+	nav#topnav li:nth-child(3n){
 	border-right:1px solid #2871d7;
 	width:50%;
 	}	
-	ul#topnav li:nth-child(2n),ul#topnav li:nth-child(6n){border-right:0;}
+	nav#topnav li:nth-child(2n),nav#topnav li:nth-child(6n){border-right:0;}
 	
 	
 	#mainBanner h1, #mainBanner h2,#mainBanner h3{font-size:90%;}
