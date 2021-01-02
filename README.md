@@ -6,8 +6,11 @@ https://matsuilb.s3-ap-northeast-1.amazonaws.com/matsuilab/index.html
 
 ### 2021.01.03
 ・CSSフレームワーク(BootStrap4)導入
+
 ・学生の研究や活動情報取得を支援するチャットボット開発追加
+
 ・レスポンシブ対応
+
 ・サブメニューバー追加
 
 ### 2020.08.29
