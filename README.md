@@ -1,4 +1,6 @@
-# (金沢工業大学松井研究室のHP)[https://www2.kanazawa-it.ac.jp/matsuilb/]
+# 金沢工業大学松井研究室のHP
+
+https://www2.kanazawa-it.ac.jp/matsuilb/
 
 ### 2021.01.03
 ・CSSフレームワーク(BootStrap4)導入
