@@ -1,9 +1,4 @@
-# 金沢工業大学松井研究室のHP
-https://www2.kanazawa-it.ac.jp/matsuilb/
-
-##　Amazon S3 レンタルサーバー
-
-https://matsuilb.s3-ap-northeast-1.amazonaws.com/matsuilab/index.html
+# (金沢工業大学松井研究室のHP)[https://www2.kanazawa-it.ac.jp/matsuilb/]
 
 ### 2021.01.03
 ・CSSフレームワーク(BootStrap4)導入
