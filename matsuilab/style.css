@@ -383,6 +383,7 @@ font-size: 14px;
 
 table.table th,table.table td{
 padding:5px;
+vertical-align:middle;
 border:1px solid #2871d7;
 }
 
