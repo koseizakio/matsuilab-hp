@@ -48,8 +48,6 @@
 						<div class="dropdown-menu">
 						<a href="index.html#Research" class="dropdown-item">研究概要</a>
 						<a href="index.html#Braille_blocks" class="dropdown-item">コード化点字ブロック</a>
-						<a href="index.html#Chatbot" class="dropdown-item">チャットボット開発</a>
-						<a href="index.html#YoutubeLive" class="dropdown-item">Youtube配信</a>
 						<a href="index.html#Recent" class="dropdown-item">近況</a>
 						<a href="index.html#Profile" class="dropdown-item">松井教授のプロフィール</a>
 						</div>
@@ -215,7 +213,7 @@
 <script>
 
 	$('.dropdown-toggle').click(function() {
-		$('.dropdown-toggle').dblclick(function() {
+		$('.dropdown-toggle').click(function() {
 		var location = $(this).attr('href');
 		window.location.href = location;
 		return false;
