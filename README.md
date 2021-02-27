@@ -2,6 +2,12 @@
 
 https://www2.kanazawa-it.ac.jp/matsuilb/
 
+### 2021.02.27
+
+・ナビゲーションナブのバグの修正
+
+・HABの動作埋め込み削除
+
 ### 2021.01.03
 ・CSSフレームワーク(BootStrap4)導入
 
