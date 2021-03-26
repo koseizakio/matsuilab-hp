@@ -49,7 +49,6 @@
 
 	<div class="inner">
 		
-		
 		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
 				<span class="navbar-toggler-icon"></span>
@@ -79,6 +78,7 @@
 						<a id="toggle3" class="nav-link dropdown-toggle" href="member.html"  data-toggle="dropdown">メンバー<br>Member</span></a>
 						<div class="dropdown-menu">
 						<a href="member.html#Professor" class="dropdown-item">教員</a>
+						<a href="member.html#2021" class="dropdown-item">2021年</a>
 						<a href="member.html#2020" class="dropdown-item">2020年</a>
 						<a href="member.html#2019" class="dropdown-item">2019年</a>
 						<a href="member.html#2018" class="dropdown-item">2018年</a>
@@ -148,8 +148,11 @@
 	<div id="Braille_blocks">
 	<section class="content">
 		<h3 class="heading">コード化点字ブロック</h3>
-		<a href="opendata/アプリ使用手引20201126.pdf" class="btn btn-primary">アプリの使い方</a>
-  		<a href="opendata/privacypolicy.pdf" class="btn btn-danger">プライバシーポリシー</a>
+		<p class="h5">Walk＆Mobile -コード化点字ブロック認識アプリ</p>
+		<p class="h6">App Store（iOS）からのインストールは<a href="https://apps.apple.com/au/app/walk-mobile/id1535368125" target="_blank" rel="noopener">こちら</a></p>
+		<p class="h6">Google Play（Android）からインストールは<a href="https://play.google.com/store/apps/details?id=com.matuilab.walkandmobile" target="_blank" rel="noopener">こちら</a></p>
+		<p class="h6"><a href="opendata/アプリ使用手引20201126.pdf">アプリの使い方</a></p>
+		<p class="h6"><a href="opendata/privacypolicy.pdf">プライバシーポリシー</a></p>
 	</section>
 	</div>
 	
@@ -160,18 +163,29 @@
 			<table class="table">
 
 				<tr>
+					<th>2021.03.19</th>
+					<td><ui><a href="https://kitnet.jp/backup/article/28/a28.html" target="_blank" rel="noopener">コード化点字ブロックを開発し
+						誰ひとり取り残されない社会の実現へ</a></ui></td>
+				</tr>
+
+				<tr>
+					<th>2021.03.06</th>
+					<td><ui><a href="https://news.yahoo.co.jp/articles/ba4bc4152ffcde97bddda65e9fce98c672a5bee7?fbclid=IwAR0L6eRIQZB4yCYBYZ_qGObLNXsXmyja1DSoKjOzpOUYfu5FmvTpsAAieC8" target="_blank" rel="noopener">点字ブロックが音声案内　金沢市役所周辺で体験イベント</a></ui></td>
+				</tr>
+
+				<tr>
 					<th>2021.01.20</th>
-					<td><ui><a a href="https://ict-enews.net/2021/01/20kit-3/?fbclid=IwAR1Akfu2FT0XpU7Cox_5Gp6a3u6ZAyj3hwBHANr5Nk6x6YzwF9asd3yKVRM" target="_blank" rel="noopener">コード化点字ブロックによるスマホ向け音声情報案内アプリを正式リリース</a></ui></td>
+					<td><ui><a href="https://ict-enews.net/2021/01/20kit-3/?fbclid=IwAR1Akfu2FT0XpU7Cox_5Gp6a3u6ZAyj3hwBHANr5Nk6x6YzwF9asd3yKVRM" target="_blank" rel="noopener">コード化点字ブロックによるスマホ向け音声情報案内アプリを正式リリース</a></ui></td>
 				</tr>
 
 				<tr>
 					<th>2021.01.15</th>
-					<td><ui><a a href="https://news.yahoo.co.jp/articles/efe6f7af311759715ffe85b58b4a5f59032a837f?fbclid=IwAR3gUr61uhyqCHirneCU8KGIl9h4cmAcPeGIHQ_SAozQyXrGIwXc4P2ylUY" target="_blank" rel="noopener">点字ブロックから店舗情報取得 金沢市柿木畠商店街でシステム実験</a></ui></td>
+					<td><ui><a href="https://news.yahoo.co.jp/articles/efe6f7af311759715ffe85b58b4a5f59032a837f?fbclid=IwAR3gUr61uhyqCHirneCU8KGIl9h4cmAcPeGIHQ_SAozQyXrGIwXc4P2ylUY" target="_blank" rel="noopener">点字ブロックから店舗情報取得 金沢市柿木畠商店街でシステム実験</a></ui></td>
 				</tr>
 
 				<tr>
 					<th>2020.12.04</th>
-					<td><ui><a a href="https://www.kanazawa-it.ac.jp/kitnews/2020/1204_MatsuiLab.html" target="_blank" rel="noopener">金沢工業大学の研究室や課外活動の情報取得を支援するチャットボットを情報工学科の学生が開発</a></ui></td>
+					<td><ui><a href="https://www.kanazawa-it.ac.jp/kitnews/2020/1204_MatsuiLab.html" target="_blank" rel="noopener">金沢工業大学の研究室や課外活動の情報取得を支援するチャットボットを情報工学科の学生が開発</a></ui></td>
 				</tr>
 
 				<tr>
@@ -351,11 +365,11 @@
 <script>
 
 	$('#toggle1').click(function() {
-	$('#toggle1').click(function() {
-		var location = $(this).attr('href');
-		window.location.href = location;
-		return false;
-	});
+		$('#toggle1').click(function() {
+			var location = $(this).attr('href');
+			window.location.href = location;
+			return false;
+		});
 	});
 
 	$('#toggle2').click(function() {
@@ -364,6 +378,7 @@
 		window.location.href = location;
 		return false;
 	});
+	
 	});
 
 	$('#toggle3').click(function() {
