@@ -8,6 +8,8 @@ https://www2.kanazawa-it.ac.jp/matsuilb/
 
 ・図名の書式変更「style.css」
 
+・チャットbotの遷移表の表示改善
+
 ### 2021.03.26
 
 ・近況変更
