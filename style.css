@@ -284,9 +284,9 @@ section.content center{
 	font-size: 40px;
 }
 
-section.content center > div > p{
+/* section.content center > div > p{
 	font-size: 12px;
-}
+} */
 
 .youtube {
 	position: relative;

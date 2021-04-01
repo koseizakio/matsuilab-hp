@@ -57,6 +57,7 @@
 				<li class="nav-item dropdown active">
 					<a id="toggle2" class="nav-link dropdown-toggle" href="research.html"  data-toggle="dropdown">研究紹介<br>Research</span></a>
 					<div class="dropdown-menu">
+						<a href="research.html#Detection" class="dropdown-item">工場設備の異常音を検知するアプリ開発</a>
 						<a href="research.html#Chatbot" class="dropdown-item">学生の研究や活動情報取得を支援するチャットボット開発</a>
 						<a href="research.html#Braille_blocks" class="dropdown-item">コード化点字ブロックによる音声情報案内</a>
 						<a href="research.html#CM_analysis" class="dropdown-item">CM好感度調査の分析</a>
@@ -95,6 +96,41 @@
 	
 	<div id="research">
 		<div id="research-content">
+
+			<div id="Detection">
+				<section class="content">
+					<h3 class="heading">工場設備の異常音を検知するアプリ開発</h3>
+					<article>
+						<p>松井くにお研究室と株式会社別川製作所（石川県白山市）は、約1年間にわたって共同研究を行い、その成果として工場設備の異常を検知するスマホアプリを開発しました。</p>
+						<p>今回の共同研究は、2020年4月より、松井研究室と別川製作所の企画開発室との間で行われたものです。松井研究室からは、松井くにお教授、情報工学科4年次の徳田真之介さんが参加しました。</p>
+						<p>研究目的は、Androidアプリで録音した機械の稼働音をクラウドで解析し、機械が正常から異常に変わるまでの過程を可視化できるようにするもの。アプリ開発担当の徳田さんは、録音と解析用データへの変換、AI（人工知能）の技術を用いたクラウドでの解析の実行までを、スマホの操作のみで対応できるようにしました。また、ARマーカーも活用し、機械の映像やガイダンスとともに録音方法などをスマホに表示させる、AR（拡張現実）の技術を活用した機能なども組み入れ、取得データの精度も保持しています。取得したデータのAIによる分析は、松井教授のアドバイスの下、別川製作所がシステムを製作しました。</p>
+						<p>2020年11月と2021年1月には、実証実験も行いました。別川製作所の工場の塗装エリアで、塗装ポンプの稼働音を録音し、操作の手順やユーザビリティーを検証。当初は解析結果をパソコンなどの別の端末で知らせることを考えていましたが、スマホの手軽さを最大限に生かすため、解析結果が即座にスマホへ通知されるように改善し、録音、解析、通知までをスマホ一台で完結させました。</p>
+						<center>
+							<div class="center-block">
+								<img src="images/20210401_matsui-lab_01.jpg" width="650" height="380" alt="">
+								<p class="h6">機械の異常音を解析するシステムのモデル図</p>
+							</div>
+						</center>
+						<p>今回の共同研究は、身近なスマホアプリの機能と、別川製作所が展開するAI・IoT（Internet of Things、モノのインターネット）を駆使した分析機能とを連携させ、新たな価値、サービスの創出の可能性を追求するものとなりました。</p>
+						<p>今後も実用化に向けた共同研究を継続し、AR・ビーコンを活用してシステムの適用範囲を拡充するとともに、機械の稼働音以外のデータも取得できるよう改善していく予定です。現在は、別川製作所内の工場で検証を行なっている段階ですが、将来的には、工場設備の異常を検知できるシステムとして実用化することも視野に入れており、今回の共同研究は実用化への一歩となりました。</p>
+						<center>
+							<div class="center-block">
+								<img src="images/20210401_matsui-lab_02.jpg" width="600" height="400" alt="">
+								<p class="h6">徳田真之介さん（左）が工場を訪れ、実証実験を実施</p>
+							</div>
+						</center>
+						
+					</article>
+
+					<article>
+						<p class="font-weight-bold h5">共同研究の開始のきっかけ</p>
+						<p>今回の共同研究のきっかけは、別川製作所の社員の方が金沢工業大学の「情報技術教育プログラム」を受講したことです。情報技術教育プログラムは、AIやIoTを中心とする新しい情報技術を活用できるよう、AI・データサイエンス・IoT・ロボティクス・ネットワークセキュリティについて、企業勤務の方が学べるプログラムです。プログラムを受講した社員の方は、さらにAI・IoTに関する知識を深めるため、松井教授からAI・IoTの技術指導を受け、そこから今回の共同研究に発展しました。</p>
+						<p>近年、情報技術教育プログラムの受講をきっかけに新たな共同研究につながる事例が増えています。また、共同研究においては、教員のみならず研究室の学生も研究に携わることが多く、この経験が学生の成長にもつながっています。金沢工業大学は、プログラムを通して、企業の研究・開発・成長をサポートするとともに、社会人とともに学び合う学生に対しても、社会実証の研究フィールドを提供していきます。</p>
+					</article>
+				</section>
+			</div>
+
+
 			<div id="Chatbot">
 				<section class="content">
 					<h3 class="heading">学生の研究や活動情報取得を支援するチャットボット開発</h3>
@@ -109,9 +145,10 @@
 						<center>
 						<div class="center-block">
 							<img src="images/20201204QRcode.png"  alt="" style="width:170px; height:170px;">
-							<p>アプリケーションQRコード</p>
+							<p class="h6">アプリケーションQRコード</p>
 						</div>
 						</center>
+						
 					</article>
 				</section>
 				<section class="content">
